@@ -107,8 +107,9 @@ public class Utils {
     public List<Element> getAllMembers(TypeElement type, TypeElement... exclusions) {
         List<? extends Element> allMembers = elements.getAllMembers(type);
 
-        final Set<Element> allExclusions = exclusions == null ? null : FluentIterable.of(exclusions)
-                .transformAndConcat(elements::getAllMembers).toSet();
+
+//        final Set<Element> allExclusions = exclusions == null ? null : FluentIterable.of(exclusions)
+//                .transformAndConcat(elements::getAllMembers).toSet();
 
         return FluentIterable.from(allMembers)
                 .transform(new Function<Element, Element>() {
@@ -119,7 +120,8 @@ public class Utils {
                         return element;
                     }
                 })
-                .filter(element -> allExclusions == null || !allExclusions.contains(element))
+			//TODO FIX
+//                .filter(element -> allExclusions == null || !allExclusions.contains(element))
                 .toList();
     }
 

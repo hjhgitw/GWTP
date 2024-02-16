@@ -1,5 +1,11 @@
 ![GWTP](http://i.imgur.com/4ENEHCM.png)
 
+Run
+n order to build the project, run from the command line:
+
+```mvn clean install -DskipTests```
+
+
 *goo-teepee*
 A complete model-view-presenter framework to simplify your next GWT project.
 
@@ -29,13 +35,13 @@ Get high quality support through ArcBees.
 
 ## Downloads
 * [Latest Jars in Maven Central](http://search.maven.org/#search%7Cga%7C1%7Ccom.gwtplatform) - Download jars from maven central.
-* See the manual dependency download section in [Maven Configuration Instructions](https://github.com/ArcBees/GWTP/wiki/Maven-Configuration) 
+* See the manual dependency download section in [Maven Configuration Instructions](https://github.com/ArcBees/GWTP/wiki/Maven-Configuration)
 
 ### Current Release
 1.6 - Released on 17 January 2017
 
 ### Current Snapshot
-2.0-SNAPSHOT
+2.1-HOTFIX
 
 ## Demos
 * [GWTP Samples Project Home](https://github.com/ArcBees/GWTP-Samples)
